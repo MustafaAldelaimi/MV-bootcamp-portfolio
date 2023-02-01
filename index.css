@@ -21,20 +21,20 @@ h3 {
           margin: 2rem;
 }
 
-h1 {
+p {
           font-size: 1.5rem;
 }
 
 nav {
           width: 60%;
-          height: 5rem;
+          min-height: 5rem;
 }
 
 nav ul {
           padding: 0;
           list-style-type: none;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
 }
 
 nav ul li a {
@@ -45,6 +45,11 @@ nav ul li a {
           background: linear-gradient(0deg, white 0%, rgba(34,193,195,1) 100%);
           border-radius: 0.8rem;
           box-shadow: 0 10px 12px rgba(0, 0, 0, 0.16);
+          transition: color 200ms ease;
+}
+
+nav ul li a:hover {
+          color: #c7feff;
 }
 
 #picture-of-me img {
@@ -53,9 +58,11 @@ nav ul li a {
 }
 
 .description {
+
           margin: 1% 20%;
           padding: 0.01% 1%;
           border-radius: 30px;
+          border: 1px solid rgba(0, 0, 0, 0.223);
           box-shadow: 0 0 100px rgba(0, 0, 0, 0.16);
 }
 
@@ -84,6 +91,12 @@ footer ul li a {
           text-decoration: none;
           color: black;
           font-size: 1.5rem;
+          transition: color 200ms ease;
+}
+
+footer ul li a:hover {
+          background: black;
+          color: #c7feff;
 
 }
 
@@ -106,12 +119,16 @@ footer ul li a {
           h1 {
                     font-size: 1.4rem;
           }
+
+          .description {
+                    margin: 1% 10%;
+          }
 }
 
 @media screen and (max-width: 500px) {
 
           nav {
-                    width: 90%;
+                    width: 100%;
           }
 
           h3 {
@@ -124,5 +141,9 @@ footer ul li a {
 
           h1 {
                     font-size: 1rem;
+          }
+
+          .description {
+                    margin: 1% 5%;
           }
 }
