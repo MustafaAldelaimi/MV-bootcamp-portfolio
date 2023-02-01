@@ -50,8 +50,8 @@ nav ul li a {
 }
 
 footer {
-          padding: 5%;
-          position: absolute;
+          padding: 2%;
+          position: sticky;
           bottom: 0;
           width: 100%;
           text-align: center;

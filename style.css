@@ -77,7 +77,7 @@ main {
 
 footer {
           padding: 2%;
-          position: absolute;
+          position: sticky;
           bottom: 0;
           width: 100%;
           text-align: center;
