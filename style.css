@@ -6,12 +6,14 @@ body {
 }
 
 body header {    /* keeps header contents in the center */
-          border-top: 5%;    /* moves content of the page down */
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 30%;
           height: 100%;
+}
+
+header h3 {
+          text-align: center;
 }
 
 h3 {
@@ -24,10 +26,13 @@ h1 {
 }
 
 nav {
-          
+
+          height: 250px;
+          width: 20vw;
 }
 
 nav ul {
+          height: 80%;
           padding: 0;
           list-style-type: none;
           display: flex;
@@ -52,11 +57,18 @@ nav ul li a {
 }
 
 .description {
-          margin: 15% 20%;
+          margin: 0 0 10% 2%;
+}
+
+main {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          
 }
 
 footer {
-          padding: 5%;
+          padding: 2%;
           position: absolute;
           bottom: 0;
           width: 100%;
@@ -87,10 +99,6 @@ footer ul li a {
                     width: 70%;
           }
 
-          h3 {
-                    font-size: 3.4rem;
-          }
-
           nav ul li a, footer ul li a {
                     font-size: 1.3rem;
           }
@@ -102,11 +110,23 @@ footer ul li a {
 
 @media screen and (max-width: 500px) {
 
+          body {
+                    display: flex;
+                    flex-direction: column;
+          }
+
           nav {
-                    width: 90%;
+                    height: 10vh;
+                    width: 100%;
+          }
+
+          nav ul {
+                    display: flex;
+                    flex-direction: row;
           }
 
           h3 {
+                    margin: 1rem 0 0 0;
                     font-size: 2.3rem;
           }
 
@@ -116,5 +136,9 @@ footer ul li a {
 
           h1 {
                     font-size: 1rem;
+          }
+
+          #picture-of-me img {
+                    max-width: 100px;
           }
 }
