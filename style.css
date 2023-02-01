@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+          font-family: 'Lato', sans-serif;
+}
+
 body .all-but-footer {
           margin: 0;
           min-height: 100vh;
           background: linear-gradient(0deg, rgba(34,193,195,1) 0%, white 100%);
-          display: flex;
 }
 
 body header {    /* keeps header contents in the center */
@@ -23,8 +27,8 @@ h3 {
 
 
 h2 {
-          margin-left: 2rem;
-          font-size: 2rem;
+          text-align: center;
+          font-size: 1.5rem;
           text-decoration: underline;
 }
 
@@ -35,8 +39,8 @@ h1 {
 
 nav {
 
-          height: 250px;
-          width: 20vw;
+          height: 100px;
+          width: 80vw;
 }
 
 nav ul {
@@ -44,7 +48,7 @@ nav ul {
           padding: 0;
           list-style-type: none;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: space-around;
           align-items: center;
 
@@ -62,16 +66,28 @@ nav ul li a {
 
 #picture-of-me img {
           border-radius: 50%;
+          margin-bottom: 5%;
+          box-shadow: 0 18px 16px rgba(0, 0, 0, 0.16);
+}
+
+main #project-img img {
+          border-radius: 25px;
+          box-shadow: 0 18px 16px rgba(0, 0, 0, 0.16);
 }
 
 .description {
           margin: 0 0 10% 2%;
+          padding: 0.01% 1%;
+          border-radius: 30px;
+          box-shadow: 0 0 100px rgba(0, 0, 0, 0.16);
 }
 
 main {
+          height: 60%;
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          align-items: center;
+          justify-content: space-around;
           
 }
 
