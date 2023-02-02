@@ -104,10 +104,6 @@ main {
 
 footer {
           padding: 2%;
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-          text-align: center;
           background: linear-gradient(0deg, aqua 0%, rgba(34,193,195,1) 100%);
 }
 
@@ -123,6 +119,8 @@ footer ul li a {
           text-decoration: none;
           color: black;
           font-size: 1.5rem;
+          padding: 8%;
+          border-radius: 20px;
 }
 
 footer ul li a:hover {
